@@ -1,5 +1,6 @@
 # configs
 //WAVY'S CONFIG/AUTOEXEC
+
    //PART 1: BINDS
     //1.1 Buy Binds
 
@@ -65,6 +66,7 @@
 	   bindToggle "h" "cl_righthand" 
 	   
    //PART 2: VISUALS
+   
     //1.1 Viewmodel
 	   viewmodel_fov 69
 	   viewmodel_presetpos 0
@@ -84,6 +86,7 @@
 
 
     //1.2  Crosshair
+    
        //cl_crosshairalpha "200";cl_crosshaircolor "0"; cl_crosshairdot "0";cl_crosshairgap "-1.1";cl_crosshairsize "0.9";cl_crosshairstyle "4";cl_crosshairusealpha "1";cl_crosshairthickness "0.6";cl_fixedcrosshairgap "0";cl_crosshair_outlinethickness "0.8";cl_crosshair_drawoutline "1";
 	   //Or i use the default static one with cl_fixedcrosshairgap -15
 	   cl_fixedcrosshairgap -8
@@ -99,6 +102,7 @@
 
 
    //PART 3: INTERNET
+   
     //1.1 INTERPOLATION/RATE
 	   rate "786432"
 	   cl_updaterate "128"
@@ -111,6 +115,7 @@
 	   
 
    //PART 4: OTHER COMMANDS
+   
     //1.1 HUD
 	   cl_alwaysshowinventory
 	   cl_showloadout 1
