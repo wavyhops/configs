@@ -2,6 +2,7 @@
 //WAVY'S CONFIG/AUTOEXEC
 
    //PART 1: BINDS
+   
     //1.1 Buy Binds
 
      //1.1.1  Full buy
