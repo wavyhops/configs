@@ -1,0 +1,165 @@
+// AUTOEXEC falcon.gg wavy
+
+ // Here are some basic settings of mine which will not be in my autoexec:
+	 // Resolution = 4:3 (1280x1024) 
+	 // Sensitivity = 2.5 
+	 // Startup Commands = -language bananagaming -refresh 60 -novid -tickrate 128 -tick 128
+
+ // If you want to find something specifically, press CTRL + F and type what you want
+ 
+ // Now we can start with the commands
+ 
+ 
+//PART 1: Binds
+  //1.1 Buy Binds
+ 
+ bind "kp_5" "buy ak47; buy m4a1"																	//AK or M4
+ bind "kp_leftarrow" "buy galilar; buy famas;" 														//Famas or Galil
+ bind "kp_rightarrow" "buy awp;"																	//AWP
+ bind "kp_home" "buy tec9; buy fiveseven;"															//Tec9 or Fiveseven
+ bind "kp_uparrow" "buy deagle;"																	//Desert Eagle
+ bind "kp_pgup" "buy p250;"																			//P250
+ bind "kp_multiply" "buy "buy ump45"																//UMP-45
+ bind "kp_slash" "buy mp7;"																			//MP7
+ 
+ bind "kp_downarrow" "buy vesthelm"																	//Kevlar + Helmet
+ bind "kp_pgdn" "buy defuser"																		//Defuse Kit
+ bind "kp_end" "buy vest" 																			//Kevlar
+ 
+ bind "kp_plus" "buy flashbang;"																	//Flashbang
+ bind "kp_minus" "buy smokegrenade;"																//Smoke
+ 
+ bind "kp_ins" "buy smokegrenade; buy hegrenade; buy flashbang; buy flashbang;"						//Nade Kit 1 (CT)
+ bind "kp_del" "buy flashbang; buy flashbang; buy smokegrenade; buy molotov; buy incgrenade;"		//Nade Kit 2 (T)
+ 
+ bind "kp_enter" "buy deagle; buy vesthelm; buy flashbang; buy flashbang"							//Deagle Kit
+ 
+ 
+ 
+  //1.2 Fake Flash Bind
+ bind "x" "use weapon_knife; use weapon_p250; use weapon_hkp2000; use weapon_glock; use weapon_tec9; use weapon_fiveseven; use weapon_deagle; drop"
+
+ 
+  //1.3 Drop Bomb
+ bind m +dropBomb
+ alias +dropBomb "use weapon_knife; use weapon_c4; drop"
+ 
+ 
+  //1.4 Cl_righthand
+ bindToggle "h" "cl_righthand" 
+ 
+  
+  //1.5 Jump bind
+ bind "MWHEELUP" "+jump"
+ bind "MWHEELDOWN" "+jump"
+ bind "SPACE" "+jump"
+ 
+  
+  //1.6 Quickswitch
+ alias +knife slot3
+ alias -knife lastinv
+ bind q +knife
+ 
+ 
+  //1.7 Nade switching
+ bind "mouse5" "use weapon_knife; use weapon_smokegrenade"
+ bind "mouse4" "use weapon_knife; use weapon_flashbang"
+ bind "v" "use weapon_knife; use weapon_incgrenade; use weapon_molotov"
+ bind "capslock" "use weapon_knife; use weapon_hegrenade"
+ 
+ 
+ 
+ 
+//PART 2: Visuals
+  //2.1 Viewmodel
+ viewmodel_fov 69
+ viewmodel_presetpos 0
+ viewmodel_offset_x "2.5"
+ viewmodel_offset_y "2.5"
+ viewmodel_offset_z "-1.7"
+
+ cl_viewmodel_shift_left_amt "0"
+ cl_viewmodel_shift_right_amt "0"
+
+ cl_bobamt_lat 0.1
+ cl_bob_lower_amt "0"
+ cl_bobamt_vert 0.1
+ cl_bobcycle 2
+
+ cl_wpn_sway_scale 0 
+ 
+ 
+  //2.2 Crosshair (the more important ones are spaced)
+    cl_crosshair_drawoutline "1"
+ cl_crosshair_dynamic_maxdist_splitratio "0.35"
+ cl_crosshair_dynamic_splitalpha_innermod "1"
+ cl_crosshair_dynamic_splitalpha_outermod "0.5"
+ cl_crosshair_dynamic_splitdist "7"
+ cl_crosshair_outlinethickness "0.100000"
+ cl_crosshair_sniper_show_normal_inaccuracy "0"
+ cl_crosshair_sniper_width "0.5"
+    cl_crosshairalpha "180"
+    cl_crosshaircolor "5"
+    cl_crosshaircolor_b "255"
+    cl_crosshaircolor_g "255"
+    cl_crosshaircolor_r "255"
+ cl_crosshairdot "0"
+    cl_crosshairgap "-2.3"
+ cl_crosshairgap_useweaponvalue "0"
+ cl_crosshairscale "0"
+    cl_crosshairsize "1.000000"
+    cl_crosshairstyle "4"
+    cl_crosshairthickness "-5"
+ cl_crosshairusealpha "1"
+ cl_fixedcrosshairgap "-8"
+ 
+ // for a copy paste: cl_crosshair_drawoutline "1"; cl_crosshairalpha "180"; cl_crosshaircolor "5";cl_crosshaircolor_b "255"; cl_crosshaircolor_g "255"; cl_crosshaircolor_r "255"; cl_crosshairgap "-2.3"; cl_crosshairsize "1.000000"; cl_crosshairstyle "4"; cl_crosshairthickness "-5"
+ 
+ 
+  //2.3 Other (Mostly for FPS)
+ r_drawtracers_firstperson "0" 
+ r_eyegloss "0" 
+ r_eyemove "0"
+ r_eyeshift_x "0"
+ r_eyeshift_y "0" 
+ r_eyeshift_z "0"
+ r_eyesize "0" 
+ 
+ 
+ 
+//PART 3: Network Settings
+  //3.1 Internet And Network Settings
+ rate "786432"
+ cl_updaterate "128"
+ cl_cmdrate "128" 
+ cl_interp "0"
+ cl_interpolate 1
+ cl_interp_ratio "1"
+ cl_predict "1"
+ cl_predictweapons "1"
+ cl_lagcompensation "1"
+ 
+ 
+
+//PART 4: Other Useful Commands
+  //4.1 Hud
+ cl_alwaysshowinventory
+ cl_showloadout 1
+ 
+ 
+  //4.2 FPS
+ fps_max 0
+ fps_max_menu 0
+ 
+ 
+  //4.3 Sound
+ snd_headphone_pan_exponent 2
+ 
+ 
+  //4.4 Others
+ cl_disablefreezecam 1
+ bind "n" "+spray_menu"
+ 
+ echo "autoexec.cfg loaded."		//Shows a message in the console that the Autoexec is loaded
+ 
+host_writeconfig
